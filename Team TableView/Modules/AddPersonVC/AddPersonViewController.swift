@@ -63,7 +63,7 @@ class AddPersonViewController: UIViewController, KeyboardNotifications {
     }()
     
     private lazy var ageStepper: UIStepper = {
-       let stepper = UIStepper()
+        let stepper = UIStepper()
         stepper.minimumValue = 18
         stepper.maximumValue = 45
         stepper.addTarget(
@@ -76,7 +76,7 @@ class AddPersonViewController: UIViewController, KeyboardNotifications {
     }()
     
     private lazy var ageLbl: UILabel = {
-       let lbl = UILabel()
+        let lbl = UILabel()
         lbl.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         return lbl
     }()
@@ -111,44 +111,6 @@ class AddPersonViewController: UIViewController, KeyboardNotifications {
         initConstraints()
     }
     
-    private func initUI() {
-        view.addSubview(scrollView)
-        scrollView.addSubview(stackView)
-        self.hideKeyboardWhenTappedAround()
-        registerForKeyboardNotifications()
-        ageStack.addArrangedSubviews(ageStepper, ageLbl)
-        stackView.addArrangedSubviews(
-            teamImg,
-            segmentedControl,
-            nameTF,
-            ageStack,
-            nextBtn
-        )
-        ageLbl.text = "Количество лет: \(Int(ageStepper.value))"
-    }
-    
-    private func initConstraints() {
-        
-        NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-        
-            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 60),
-            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
-            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
-            stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            stackView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -40),
-            
-            ageStack.widthAnchor.constraint(equalTo: stackView.widthAnchor),
-            teamImg.heightAnchor.constraint(equalToConstant: 100),
-            nameTF.heightAnchor.constraint(equalToConstant: 50),
-            segmentedControl.heightAnchor.constraint(equalToConstant: 32),
-            nextBtn.heightAnchor.constraint(equalToConstant: 48),
-        ])
-    }
-    
     @objc func segmentAction(_ segmentedControl: UISegmentedControl) {
         switch (segmentedControl.selectedSegmentIndex) {
         case 0:
@@ -168,25 +130,19 @@ class AddPersonViewController: UIViewController, KeyboardNotifications {
         }
     }
     
-    @objc func stepperValueChanged(_ sender:UIStepper!)
-     {
-         ageLbl.text = "Количество лет: \(Int(ageStepper.value))"
-     }
+    @objc func stepperValueChanged(_ sender:UIStepper!) {
+        ageLbl.text = "Количество лет: \(Int(ageStepper.value))"
+    }
     
     @objc func cancelVC() {
         cancelWith?(nil, nil)
     }
     
     @objc func addBtnTapped() {
-        if
-            let text = nameTF.text,
-            !text.isEmpty,
-            let team = type
-        {
-            cancelWith?(
-                team,
-                Person(name: text, age: Int(ageStepper.value))
-            )
+        if let text = nameTF.text,
+           !text.isEmpty,
+           let team = type {
+            cancelWith?(team, Person(name: text, age: Int(ageStepper.value)))
         } else {
             let alert = UIAlertController(
                 title: "Заполните данные",
@@ -207,5 +163,47 @@ class AddPersonViewController: UIViewController, KeyboardNotifications {
             bottom: margin,
             right: 0
         )
+    }
+}
+
+// MARK: - private methods
+private extension AddPersonViewController {
+    
+    func initUI() {
+        view.addSubview(scrollView)
+        scrollView.addSubview(stackView)
+        self.hideKeyboardWhenTappedAround()
+        registerForKeyboardNotifications()
+        ageStack.addArrangedSubviews(ageStepper, ageLbl)
+        stackView.addArrangedSubviews(
+            teamImg,
+            segmentedControl,
+            nameTF,
+            ageStack,
+            nextBtn
+        )
+        ageLbl.text = "Количество лет: \(Int(ageStepper.value))"
+    }
+    
+    func initConstraints() {
+        
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            
+            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 60),
+            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
+            stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            stackView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -40),
+            
+            ageStack.widthAnchor.constraint(equalTo: stackView.widthAnchor),
+            teamImg.heightAnchor.constraint(equalToConstant: 100),
+            nameTF.heightAnchor.constraint(equalToConstant: 50),
+            segmentedControl.heightAnchor.constraint(equalToConstant: 32),
+            nextBtn.heightAnchor.constraint(equalToConstant: 48),
+        ])
     }
 }

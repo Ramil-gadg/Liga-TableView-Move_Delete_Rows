@@ -57,22 +57,6 @@ class TeamsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    func initUI() {
-        
-        self.view.addSubview(tableView)
-
-    }
-    
-    func initConstraints() {
-        
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-            tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            tableView.rightAnchor.constraint(equalTo: self.view.rightAnchor)
-        ])
-    }
-    
     @objc func addPerson() {
         let addVC = AddPersonViewController()
         addVC.cancelWith = { [weak self] team, person in
@@ -96,6 +80,24 @@ class TeamsViewController: UIViewController {
             rootViewController: addVC
         )
         self.present(navC, animated: true)
+    }
+}
+
+// MARK: - private methods
+private extension TeamsViewController {
+    
+    func initUI() {
+        self.view.addSubview(tableView)
+    }
+    
+    func initConstraints() {
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            tableView.rightAnchor.constraint(equalTo: self.view.rightAnchor)
+        ])
     }
 }
 
