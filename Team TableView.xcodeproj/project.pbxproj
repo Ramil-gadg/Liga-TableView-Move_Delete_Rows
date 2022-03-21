@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03082D8627E755D4003C6C98 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03082D8527E755D4003C6C98 /* AddPersonViewController.swift */; };
+		03082D8827E759D9003C6C98 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03082D8727E759D9003C6C98 /* BaseNavigationController.swift */; };
+		03082D8A27E75BE1003C6C98 /* KeyboardNotificationsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03082D8927E75BE0003C6C98 /* KeyboardNotificationsProtocol.swift */; };
+		03082D8D27E762E0003C6C98 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03082D8C27E762E0003C6C98 /* UIView + Extension.swift */; };
+		03082D8F27E76378003C6C98 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03082D8E27E76378003C6C98 /* UIStackView + Extension.swift */; };
+		0347D97F27E90500006AD991 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0347D97E27E90500006AD991 /* UIViewController + Extension.swift */; };
+		0347D98827E90623006AD991 /* TeamsVC + TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0347D98727E90623006AD991 /* TeamsVC + TVDelegate.swift */; };
+		0347D98A27E90643006AD991 /* TeamsVC + TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0347D98927E90643006AD991 /* TeamsVC + TVDataSource.swift */; };
+		0347D98C27E90664006AD991 /* TeamsVC + TVDragDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0347D98B27E90664006AD991 /* TeamsVC + TVDragDelegate.swift */; };
 		0384AE7E27E10EBD00DD8D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE7D27E10EBD00DD8D47 /* AppDelegate.swift */; };
 		0384AE8027E10EBD00DD8D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE7F27E10EBD00DD8D47 /* SceneDelegate.swift */; };
-		0384AE8227E10EBD00DD8D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE8127E10EBD00DD8D47 /* ViewController.swift */; };
-		0384AE8527E10EBD00DD8D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384AE8327E10EBD00DD8D47 /* Main.storyboard */; };
+		0384AE8227E10EBD00DD8D47 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE8127E10EBD00DD8D47 /* TeamsViewController.swift */; };
 		0384AE8727E10EC200DD8D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384AE8627E10EC200DD8D47 /* Assets.xcassets */; };
 		0384AE8A27E10EC200DD8D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384AE8827E10EC200DD8D47 /* LaunchScreen.storyboard */; };
+		0384AE9227E10F7500DD8D47 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE9127E10F7500DD8D47 /* Team.swift */; };
+		0384AE9427E10F8100DD8D47 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE9327E10F8100DD8D47 /* Person.swift */; };
+		0384AE9627E1106900DD8D47 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE9527E1106800DD8D47 /* HeaderView.swift */; };
+		0384AE9827E1107500DD8D47 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384AE9727E1107400DD8D47 /* TeamCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03082D8527E755D4003C6C98 /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		03082D8727E759D9003C6C98 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		03082D8927E75BE0003C6C98 /* KeyboardNotificationsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationsProtocol.swift; sourceTree = "<group>"; };
+		03082D8C27E762E0003C6C98 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		03082D8E27E76378003C6C98 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		0347D97E27E90500006AD991 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		0347D98727E90623006AD991 /* TeamsVC + TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamsVC + TVDelegate.swift"; sourceTree = "<group>"; };
+		0347D98927E90643006AD991 /* TeamsVC + TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamsVC + TVDataSource.swift"; sourceTree = "<group>"; };
+		0347D98B27E90664006AD991 /* TeamsVC + TVDragDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamsVC + TVDragDelegate.swift"; sourceTree = "<group>"; };
 		0384AE7A27E10EBD00DD8D47 /* Team TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384AE7D27E10EBD00DD8D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384AE7F27E10EBD00DD8D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0384AE8127E10EBD00DD8D47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0384AE8427E10EBD00DD8D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0384AE8127E10EBD00DD8D47 /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		0384AE8627E10EC200DD8D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0384AE8927E10EC200DD8D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0384AE8B27E10EC200DD8D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0384AE9127E10F7500DD8D47 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		0384AE9327E10F8100DD8D47 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0384AE9527E1106800DD8D47 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0384AE9727E1107400DD8D47 /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03082D8B27E762C9003C6C98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03082D8C27E762E0003C6C98 /* UIView + Extension.swift */,
+				03082D8E27E76378003C6C98 /* UIStackView + Extension.swift */,
+				0347D97E27E90500006AD991 /* UIViewController + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0347D97B27E902BB006AD991 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				03082D8727E759D9003C6C98 /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0347D97C27E902D3006AD991 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				03082D8927E75BE0003C6C98 /* KeyboardNotificationsProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0347D97D27E902ED006AD991 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0347D98227E905B1006AD991 /* TeamsVC */,
+				0347D98627E905E9006AD991 /* AddPersonVC */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0347D98027E90576006AD991 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				0384AE7F27E10EBD00DD8D47 /* SceneDelegate.swift */,
+				0384AE7D27E10EBD00DD8D47 /* AppDelegate.swift */,
+				0384AE8827E10EC200DD8D47 /* LaunchScreen.storyboard */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		0347D98127E90598006AD991 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				0384AE8B27E10EC200DD8D47 /* Info.plist */,
+				0384AE8627E10EC200DD8D47 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		0347D98227E905B1006AD991 /* TeamsVC */ = {
+			isa = PBXGroup;
+			children = (
+				0347D98527E905DC006AD991 /* Items */,
+				0347D98427E905C8006AD991 /* Cells */,
+				0347D98327E905BD006AD991 /* Headers */,
+				0384AE8127E10EBD00DD8D47 /* TeamsViewController.swift */,
+				0347D98727E90623006AD991 /* TeamsVC + TVDelegate.swift */,
+				0347D98927E90643006AD991 /* TeamsVC + TVDataSource.swift */,
+				0347D98B27E90664006AD991 /* TeamsVC + TVDragDelegate.swift */,
+			);
+			path = TeamsVC;
+			sourceTree = "<group>";
+		};
+		0347D98327E905BD006AD991 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0384AE9527E1106800DD8D47 /* HeaderView.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		0347D98427E905C8006AD991 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0384AE9727E1107400DD8D47 /* TeamCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0347D98527E905DC006AD991 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				0384AE9127E10F7500DD8D47 /* Team.swift */,
+				0384AE9327E10F8100DD8D47 /* Person.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		0347D98627E905E9006AD991 /* AddPersonVC */ = {
+			isa = PBXGroup;
+			children = (
+				03082D8527E755D4003C6C98 /* AddPersonViewController.swift */,
+			);
+			path = AddPersonVC;
+			sourceTree = "<group>";
+		};
 		0384AE7127E10EBC00DD8D47 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +181,12 @@
 		0384AE7C27E10EBD00DD8D47 /* Team TableView */ = {
 			isa = PBXGroup;
 			children = (
-				0384AE7D27E10EBD00DD8D47 /* AppDelegate.swift */,
-				0384AE7F27E10EBD00DD8D47 /* SceneDelegate.swift */,
-				0384AE8127E10EBD00DD8D47 /* ViewController.swift */,
-				0384AE8327E10EBD00DD8D47 /* Main.storyboard */,
-				0384AE8627E10EC200DD8D47 /* Assets.xcassets */,
-				0384AE8827E10EC200DD8D47 /* LaunchScreen.storyboard */,
-				0384AE8B27E10EC200DD8D47 /* Info.plist */,
+				0347D98127E90598006AD991 /* Resourses */,
+				0347D98027E90576006AD991 /* Aplication */,
+				0347D97C27E902D3006AD991 /* Protocols */,
+				0347D97B27E902BB006AD991 /* Base */,
+				03082D8B27E762C9003C6C98 /* Extensions */,
+				0347D97D27E902ED006AD991 /* Modules */,
 			);
 			path = "Team TableView";
 			sourceTree = "<group>";
@@ -127,7 +251,6 @@
 			files = (
 				0384AE8A27E10EC200DD8D47 /* LaunchScreen.storyboard in Resources */,
 				0384AE8727E10EC200DD8D47 /* Assets.xcassets in Resources */,
-				0384AE8527E10EBD00DD8D47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +261,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0384AE8227E10EBD00DD8D47 /* ViewController.swift in Sources */,
+				0384AE9427E10F8100DD8D47 /* Person.swift in Sources */,
+				03082D8A27E75BE1003C6C98 /* KeyboardNotificationsProtocol.swift in Sources */,
+				0384AE9227E10F7500DD8D47 /* Team.swift in Sources */,
+				03082D8F27E76378003C6C98 /* UIStackView + Extension.swift in Sources */,
+				0347D98827E90623006AD991 /* TeamsVC + TVDelegate.swift in Sources */,
+				0384AE9827E1107500DD8D47 /* TeamCell.swift in Sources */,
+				03082D8D27E762E0003C6C98 /* UIView + Extension.swift in Sources */,
+				0384AE8227E10EBD00DD8D47 /* TeamsViewController.swift in Sources */,
+				0384AE9627E1106900DD8D47 /* HeaderView.swift in Sources */,
+				03082D8827E759D9003C6C98 /* BaseNavigationController.swift in Sources */,
+				0347D98C27E90664006AD991 /* TeamsVC + TVDragDelegate.swift in Sources */,
 				0384AE7E27E10EBD00DD8D47 /* AppDelegate.swift in Sources */,
 				0384AE8027E10EBD00DD8D47 /* SceneDelegate.swift in Sources */,
+				0347D97F27E90500006AD991 /* UIViewController + Extension.swift in Sources */,
+				0347D98A27E90643006AD991 /* TeamsVC + TVDataSource.swift in Sources */,
+				03082D8627E755D4003C6C98 /* AddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0384AE8327E10EBD00DD8D47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0384AE8427E10EBD00DD8D47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0384AE8827E10EC200DD8D47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +419,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95G8586896;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Team TableView/Info.plist";
+				INFOPLIST_FILE = "Team TableView/Resourses/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +446,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95G8586896;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Team TableView/Info.plist";
+				INFOPLIST_FILE = "Team TableView/Resourses/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
